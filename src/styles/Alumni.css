@@ -1,0 +1,30 @@
+.mainBox {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 3px solid #428bca;
+    padding-left: calc(98% * (215 / 980));
+    padding-right: calc(98% * (215 / 980));
+    padding-top: 20px;
+    text-align: center;
+    height: 1500px;
+}
+
+.alumniHeader {
+    color: #428bca;
+    font-weight: normal;
+}
+
+.descriptionText {
+    color: #428bca;
+}
+
+.markButton {
+    color: white !important;
+    background-color: #428bca !important;
+    height: 33px;
+    font-weight: normal !important;
+    font-size: min(15px, 3vw) !important;
+    width: min(311px, 80%);
+}
