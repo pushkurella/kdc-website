@@ -1,17 +1,11 @@
 import React from 'react';
 import '../styles/footer.css';
-import { Form, Card, Input } from "semantic-ui-react";
 import 'semantic-ui-css/semantic.min.css';
 import '../styles/Contact.css';
 import SimpleMap from './SimpleMap';
 
-const inlineStyle = {
-    
-}
+
 class Contact extends React.Component {
-    // constructor() {
-    //     super();
-    // }
     render() {
         return (
             <div>
@@ -46,8 +40,8 @@ class Contact extends React.Component {
                                 <SimpleMap></SimpleMap>
                                 
                                     <h4>Address Details</h4>
-                                    <span className="spans"><img src="https://img.icons8.com/ultraviolet/40/000000/marker.png"/> </span><p className="spans">61 kent Ave, Kitchener, ON</p><br></br>
-                                    <span className="spans" style= {inlineStyle}><img src="https://img.icons8.com/ultraviolet/40/000000/new-post.png"/></span><p className="spans">ron_mooibroek@cooperators.ca</p>
+                                    <span className="spans"><img alt= "location" src="https://img.icons8.com/ultraviolet/40/000000/marker.png"/> </span><p className="spans">61 kent Ave, Kitchener, ON</p><br></br>
+                                    <span className="spans"><img alt= "email" src="https://img.icons8.com/ultraviolet/40/000000/new-post.png"/></span><p className="spans">ron_mooibroek@cooperators.ca</p>
                                 
                             </div>
                         </div>

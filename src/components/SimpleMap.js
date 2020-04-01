@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
  
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
- 
+const Update = ({ text }) => <div>{text}</div>;
+const cooperatorsLat = 43.438189;
+const cooperatorsLong = -80.477937;
+const googleMapsApiKey ='AIzaSyCSpif8-39Cj9NyPq-_m2aZtafrLm5REwA';
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 43.438189,
-      lng: -80.477937
+      lat: cooperatorsLat,
+      lng: cooperatorsLong
     },
     zoom: 11
   };
@@ -15,15 +17,15 @@ class SimpleMap extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '35vh', width: '80vh' }}>
+      <div style={{ height: '35vh', width: '85vh' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyCSpif8-39Cj9NyPq-_m2aZtafrLm5REwA'}}
+          bootstrapURLKeys={{ key: googleMapsApiKey}}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <AnyReactComponent
-            lat={43.438189}
-            lng={-80.477937}
+          <Update
+            lat={cooperatorsLat}
+            lng={cooperatorsLong}
             text="Cooperators Development Center"
           />
         </GoogleMapReact>
