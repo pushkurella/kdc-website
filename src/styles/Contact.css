@@ -1,0 +1,24 @@
+.ui.form input[type=text] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px solid #dddddd;
+  }
+
+  .ui.form textarea {
+    margin: 10px;
+  }
+
+  .ui.primary.button {
+      margin-right: auto;
+      align-content: center;
+  }
+
+  .ui.card {
+    width: max-content;
+    margin-left: 10px;
+  }
+
+  .ui.primary.button {
+      float: right;
+  }
