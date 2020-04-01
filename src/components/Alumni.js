@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Alumni.css';
+import 'semantic-ui-css/semantic.min.css';
 import { fetchTeamInfo } from '../actions';
 import AlumniListElement from './AlumniListElement';
 import { connect } from 'react-redux';

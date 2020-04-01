@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/PersonBox.css';
 import headPic from '../head-659652_1920.png';
+import 'semantic-ui-css/semantic.min.css';
 
 export class PersonBox extends Component {
     render() {

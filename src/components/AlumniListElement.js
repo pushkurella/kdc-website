@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import PersonBox from './PersonBox';
+import 'semantic-ui-css/semantic.min.css';
 import '../styles/AlumniListElement.css';
 
 export class AlumniListElement extends Component {
