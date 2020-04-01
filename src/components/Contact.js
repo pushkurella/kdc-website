@@ -25,7 +25,7 @@ class Contact extends React.Component {
                     <div className="ui two cards">
                         <div className="card">
                             <div class="content">
-                                <form class="ui form">
+                                <form action="mailto:pushpak_kurella@cooperators.ca?subject=Question regarding Co-operators Incubator" method="post" enctype="text/plain" class="ui form">
                                     <h3>Contact Us</h3>
                                     <input type="text" id="name" placeholder="Full name" /><br></br>
                                     <input type="text" id="email" placeholder="Email" />
