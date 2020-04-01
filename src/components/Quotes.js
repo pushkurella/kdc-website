@@ -85,7 +85,6 @@ class Quotes extends React.Component {
     render() {
         var { quotes, colors, angles, newQuote, newName, newTerm, termErr, nameErr, quoteErr } = this.state;
         var CHARACTER_LIMIT = 100;
-
         return (
             <div className='leave-your-mark'>
                 <h2 className="wall-header">Leave Your Mark</h2>
