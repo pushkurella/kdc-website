@@ -1,0 +1,11 @@
+.Title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    align-content: center;
+}
+
+.Events {
+    border: 10px;
+    border-spacing: 10px;
+    border-color: black;
+}
