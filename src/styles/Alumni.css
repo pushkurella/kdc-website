@@ -1,30 +1,29 @@
 .mainBox {
-    margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 2%;
     margin-right: 2%;
     border: 3px solid #428bca;
-    padding-left: calc(98% * (215 / 980));
-    padding-right: calc(98% * (215 / 980));
+    padding-left: min(15vw, max(calc(30vw - 90px), 0px));
+    padding-right: min(15vw, max(calc(30vw - 90px), 0px));
     padding-top: 20px;
     text-align: center;
-    height: 1500px;
 }
 
 .alumniHeader {
     color: #428bca;
     font-weight: normal;
+    /* font-size: 8em; */
+    font-size: 8vw;
 }
 
 .descriptionText {
     color: #428bca;
+    font-size: 1.75vw;
 }
 
 .markButton {
     color: white !important;
     background-color: #428bca !important;
-    height: 33px;
     font-weight: normal !important;
-    font-size: min(15px, 3vw) !important;
-    width: min(311px, 80%);
+    font-size: 1.5vw !important;
 }

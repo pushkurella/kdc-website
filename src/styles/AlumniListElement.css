@@ -1,0 +1,18 @@
+.listBox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ui.grid {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.column {
+    padding: 3px !important;
+}
+
+.termHeader {
+    color: #428bca;
+    font-size: 4vw;
+}

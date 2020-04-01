@@ -1,24 +1,18 @@
 import React, { Component } from 'react';
 import '../styles/PersonBox.css';
+import headPic from '../head-659652_1920.png';
 
 export class PersonBox extends Component {
     render() {
         const { person } = this.props;
-        console.log(person);
         return (
             <div className="outsideBox">
-                <div
-                    style={{
-                        height: '70px',
-                        width: '70px',
-                        margin: 'auto',
-                        border: '3px solid black',
-                    }}
-                >
-                    {person.picture}
-                </div>
-                <div>{person.name}</div>
-                <div>{person.description}</div>
+                <img
+                    className="ui medium circular image portrait"
+                    src={headPic}
+                />
+                <h3 className="personName">{person.name}</h3>
+                <h4 className="personDescription">{person.description}</h4>
             </div>
         );
     }

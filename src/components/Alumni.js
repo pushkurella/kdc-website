@@ -11,9 +11,6 @@ export class Alumni extends Component {
     render() {
         return (
             <div>
-                {/* header */}
-                <div style={{ height: '50px' }}> Hello!</div>
-
                 <div className="mainBox">
                     <h1 className="alumniHeader">Our Alumni</h1>
                     <p className="descriptionText">
@@ -28,8 +25,8 @@ export class Alumni extends Component {
                     <button className="ui button markButton">
                         Leave Your Mark
                     </button>
-                    {this.props.teams.map(team => {
-                        return <AlumniListElement team={team} />;
+                    {this.props.teams.map((team, index) => {
+                        return <AlumniListElement team={team} key={index} />;
                     })}
                 </div>
             </div>
