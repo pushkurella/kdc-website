@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from '..//logo.svg';
 import '../styles/App.css';
+import Nav from './Nav';
+import Footer from './Footer';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import history from '../history';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+
+    return (
+      <div className="app">
+        <Nav />
+        <div className="app-body">
+          <BrowserRouter history={history}>
+            <Switch>
+              <Route path="/about" exact component={Nav} />
+              <Route path="/projects" exact component={Nav} />
+              <Route path="/team" exact component={Nav} />
+              <Route path="/" exact component={Nav} />
+              <Route path="/events" exact component={Nav} />
+              <Route path="/business" exact component={Nav} />
+              <Route path="/contact" exact component={Nav} />
+            </Switch>
+          </BrowserRouter>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
