@@ -48,10 +48,10 @@ const Info = () => {
     };
   
     return (
-      <div className="tab">
+      <div className="tabComponent">
         <div className={classes.root}>
           <AppBar position="static">
-            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
+            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" className="tabBar" centered>
               <Tab label="Incubator Days" {...a11yProps(0)} />
               <Tab label="Olympics" {...a11yProps(1)} />
               <Tab label="Team Building" {...a11yProps(2)} />

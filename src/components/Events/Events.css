@@ -1,11 +1,19 @@
 .Title {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
+    font-weight: lighter;
     color: blue;
     align-content: center;
+    font-size: 40px;
+    padding-bottom: 50px;
 }
 
 .Events {
-    border: 10px;
-    border-spacing: 10px;
-    border-color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.Page {
+    border: 5px solid blue;
+    margin: 20px
 }

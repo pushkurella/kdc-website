@@ -1,3 +1,16 @@
-.tab {
-    padding-top: 40px;
+.tabComponent {
+    padding-top: 50px;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tabBar {
+    background-color: white;
+    color: blue;
+}
+
+.MuiTab-textColorInherit.Mui-selected {
+    font-weight: bolder;
+    background-color: whitesmoke;
 }

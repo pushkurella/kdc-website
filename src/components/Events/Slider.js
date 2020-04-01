@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import "./Slider.css"
 
 const images = [
     { src: 'https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'},
@@ -10,7 +11,7 @@ const images = [
     { src: 'https://images.unsplash.com/photo-1534161308652-fdfcf10f62c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2174&q=80'},
   ];
   
-  export default class NewSlider extends React.Component {
+  export default class ImageSlider extends React.Component {
     state = {
         activeSlide: 0,
         activeSlide2: 0
@@ -29,7 +30,7 @@ const images = [
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 3000,
         pauseOnHover: true,
         beforeChange: (current, next) => this.setState({ activeSlide: next }),
         afterChange: current => this.setState({ activeSlide2: current })
@@ -39,7 +40,7 @@ const images = [
           <Slider {...settings}>
             {images.map((img) => (
               <div>
-                <img src={img.src} />
+                <img src={img.src} alt="" class="center"/>
               </div>
             ))}
           </Slider>
