@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import '../styles/Alumni.css';
+import { fetchTeamInfo } from '../actions';
+import AlumniListElement from './AlumniListElement';
+import { connect } from 'react-redux';
 
 export class Alumni extends Component {
+    componentDidMount() {
+        this.props.fetchTeamInfo();
+    }
     render() {
         return (
             <div>
                 {/* header */}
                 <div style={{ height: '50px' }}> Hello!</div>
+
                 <div className="mainBox">
                     <h1 className="alumniHeader">Our Alumni</h1>
                     <p className="descriptionText">
@@ -21,10 +28,17 @@ export class Alumni extends Component {
                     <button className="ui button markButton">
                         Leave Your Mark
                     </button>
+                    {this.props.teams.map(team => {
+                        return <AlumniListElement team={team} />;
+                    })}
                 </div>
             </div>
         );
     }
 }
 
-export default Alumni;
+const mapStateToProps = state => {
+    return { teams: state.teams };
+};
+
+export default connect(mapStateToProps, { fetchTeamInfo })(Alumni);
