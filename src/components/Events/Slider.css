@@ -1,17 +1,16 @@
 button.slick-arrow {
-    color: white;
-    margin: auto;
-    background-color: gray;
+    color: black !important;
+    background-color: gray !important;
 }
 
 button.slick-prev {
     z-index: 2;
-    margin-left: 10%;
+    margin-left: 10% !important;
 }
 
 button.slick-next {
     z-index: 2;
-    margin-right: 10%;
+    margin-right: 10% !important;
 }
 
 img {

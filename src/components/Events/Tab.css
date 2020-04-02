@@ -6,11 +6,28 @@
 }
 
 .tabBar {
-    background-color: white;
-    color: blue;
+    background-color: whitesmoke;
+    text-align: center;
+    scroll-behavior: auto;
 }
 
-.MuiTab-textColorInherit.Mui-selected {
-    font-weight: bolder;
-    background-color: whitesmoke;
+.MuiButtonBase-root {
+    color: black !important;
+}
+
+.MuiTab-textColorPrimary {
+    color: blue !important;
+}
+
+.Mui-selected {
+    font-weight: bolder !important;
+    background-color: white !important;
+}
+
+.MuiAppBar-positionStatic {
+    background-color: whitesmoke !important;
+}
+
+.MuiTypography-body1 {
+    text-align: center;
 }

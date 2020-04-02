@@ -8,8 +8,8 @@ class EventsPage extends React.Component {
         return (
             <div className="Page">
                 <div className="Events">
-                    <div className="Title">
-                        <h1>Events at the KDC</h1>
+                    <div>
+                        <h1 className="Title" center>Events at the KDC</h1>
                     </div>
                     <div>
                         <ImageSlider />
