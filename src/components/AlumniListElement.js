@@ -7,53 +7,29 @@ export class AlumniListElement extends Component {
     _determineColumns(curPersonList) {
         const curLen = curPersonList.length;
         if (curLen < 4) {
-            if (curLen === 0) {
-                return null;
-            } else if (curLen === 1) {
-                return (
-                    <div className="sixteen wide column">
-                        <PersonBox person={curPersonList[0]} />
-                    </div>
-                );
-            } else if (curLen === 2) {
-                return (
-                    <Fragment>
-                        <div className="eight wide column">
-                            <PersonBox person={curPersonList[0]} />
-                        </div>
-                        <div className="eight wide column">
-                            <PersonBox person={curPersonList[1]} />
-                        </div>
-                    </Fragment>
-                );
-            } else if (curLen === 3) {
-                return (
-                    <Fragment>
-                        <div className="five wide column">
-                            <PersonBox person={curPersonList[0]} />
-                        </div>
-                        <div className="six wide column">
-                            <PersonBox person={curPersonList[1]} />
-                        </div>
-                        <div className="five wide column">
-                            <PersonBox person={curPersonList[2]} />
-                        </div>
-                    </Fragment>
-                );
-            }
-        } else {
             return (
-                <Fragment>
-                    {curPersonList.slice(0, 4).map(curPerson => {
+                <div className="equal width row">
+                    {curPersonList.map(curPerson => {
                         return (
-                            <div
-                                className="four wide column"
-                                key={curPerson.name}
-                            >
+                            <div className="column" key={curPerson.name}>
                                 <PersonBox person={curPerson} />
                             </div>
                         );
                     })}
+                </div>
+            );
+        } else {
+            return (
+                <Fragment>
+                    <div className="equal width row">
+                        {curPersonList.slice(0, 4).map(curPerson => {
+                            return (
+                                <div className="column" key={curPerson.name}>
+                                    <PersonBox person={curPerson} />
+                                </div>
+                            );
+                        })}
+                    </div>
                     {this._determineColumns(curPersonList.slice(4))}
                 </Fragment>
             );
@@ -67,8 +43,8 @@ export class AlumniListElement extends Component {
         return (
             <div className="listBox">
                 <h2 className="termHeader">{team.termName}</h2>
-                <div className="ui grid">
-                    <div className="sixteen wide column">
+                <div className="ui equal width grid">
+                    <div className="column">
                         <PersonBox person={team.teamLead} />
                     </div>
                     {this._determineColumns(team.team)}

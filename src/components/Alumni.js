@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
 import '../styles/Alumni.css';
 import 'semantic-ui-css/semantic.min.css';
-import { fetchTeamInfo } from '../actions';
+import { fetchTeamInfo, fetchAlumniPageDesc } from '../actions';
 import AlumniListElement from './AlumniListElement';
 import { connect } from 'react-redux';
+import history from '../history';
 
 export class Alumni extends Component {
     componentDidMount() {
         this.props.fetchTeamInfo();
+        this.props.fetchAlumniPageDesc();
     }
+
+    _linkTo = (str) => {
+        history.push(str);
+        window.location.reload();
+    }
+
     render() {
         return (
             <div>
                 <div className="mainBox">
                     <h1 className="alumniHeader">Our Alumni</h1>
-                    <p className="descriptionText">
-                        Since the conception of the Kitchener Development
-                        Centre, there have been a plethora of talent who have
-                        come and gone. Each member has always managed to leave
-                        their own unique stamp on the Incubator experience. To
-                        show our respect to their hard work, we have dedicated
-                        this page to all of the Incubator alumni including the
-                        current team members.
-                    </p>
-                    <button className="ui button markButton">
+                    <p className="descriptionText">{this.props.alumniDesc}</p>
+                    <button className="ui button markButton" onClick={()=>{this._linkTo("/leave-your-mark")}}>
                         Leave Your Mark
                     </button>
                     {this.props.teams.map((team, index) => {
@@ -36,7 +36,9 @@ export class Alumni extends Component {
 }
 
 const mapStateToProps = state => {
-    return { teams: state.teams };
+    return { teams: state.teams, alumniDesc: state.alumniDesc };
 };
 
-export default connect(mapStateToProps, { fetchTeamInfo })(Alumni);
+export default connect(mapStateToProps, { fetchTeamInfo, fetchAlumniPageDesc })(
+    Alumni
+);

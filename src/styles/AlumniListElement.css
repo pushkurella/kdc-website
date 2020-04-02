@@ -4,15 +4,19 @@
 }
 
 .ui.grid {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
 }
 
 .column {
-    padding: 3px !important;
+    padding: 0.75rem !important;
+}
+
+.row {
+    padding: 0px !important;
 }
 
 .termHeader {
     color: #428bca;
-    font-size: 4vw;
+    font-size: min(4vw, 4em);
 }

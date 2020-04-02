@@ -21,8 +21,16 @@ const teamInfoReducer = (teamsArray = [], action) => {
     return teamsArray;
 };
 
+const alumniDescReducer = (alumniDesc = '', action) => {
+    if (action.type === 'ALUMNI_DESC') {
+        return action.payload;
+    }
+    return alumniDesc;
+};
+
 export default combineReducers({
     reducer1: dummyReducer,
     reducer2: dummyActionCreaterReducer,
     teams: teamInfoReducer,
+    alumniDesc: alumniDescReducer,
 });
