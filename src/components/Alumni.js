@@ -23,7 +23,7 @@ export class Alumni extends Component {
                 <div className="mainBox">
                     <h1 className="alumniHeader">Our Alumni</h1>
                     <p className="descriptionText">{this.props.alumniDesc}</p>
-                    <button className="ui button markButton" onClick={()=>{this._linkTo("/leave-your-mark")}}>
+                    <button className="ui button markButton" onClick={()=>{this._linkTo("/leaveyourmark")}}>
                         Leave Your Mark
                     </button>
                     {this.props.teams.map((team, index) => {

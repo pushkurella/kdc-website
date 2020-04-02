@@ -29,7 +29,6 @@ class App extends React.Component {
               <Route path="/events" exact component={Nav} />
               <Route path="/business" exact component={Nav} />
               <Route path="/contact" exact component={Contact }/>
-              <Route path="/leave-your-mark" exact component={Nav}/>
             </Switch>
           </BrowserRouter>
         </div>
