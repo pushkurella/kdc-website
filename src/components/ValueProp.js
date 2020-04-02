@@ -8,6 +8,7 @@ import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
 import SchoolIcon from '@material-ui/icons/School';
 import MapIcon from '@material-ui/icons/Map';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import history from '../history';
 
 class ValueProp extends React.Component {
@@ -63,7 +64,7 @@ class ValueProp extends React.Component {
                     </div>
                 </Card>
                 <div className='valueProp-card-btn'>
-                    <Button onClick={this.goProblemStatement} > Problem statement > </Button>
+                    <Button onClick={this.goProblemStatement} > Problem statement <ChevronRightIcon/></Button>
                 </div>
             </Card>
         </div>
