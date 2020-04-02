@@ -3,6 +3,7 @@ import '../styles/App.css';
 import Nav from './Nav';
 import Alumni from './Alumni';
 import Footer from './Footer';
+import Quotes from './Quotes';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import history from '../history';
 import ValueProp from './ValueProp';
