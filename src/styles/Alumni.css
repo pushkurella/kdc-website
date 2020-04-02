@@ -12,18 +12,17 @@
 .alumniHeader {
     color: #428bca;
     font-weight: normal;
-    /* font-size: 8em; */
-    font-size: 8vw;
+    font-size: min(7vw, 7em);
 }
 
 .descriptionText {
     color: #428bca;
-    font-size: 1.75vw;
+    font-size: min(1.75vw, 1.75em);
 }
 
 .markButton {
     color: white !important;
     background-color: #428bca !important;
     font-weight: normal !important;
-    font-size: 1.5vw !important;
+    font-size: min(1.5vw, 1.5em) !important;
 }
