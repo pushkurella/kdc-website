@@ -18,7 +18,7 @@ class Nav extends React.Component {
                 <Button className='nav-bar-button' onClick={()=>{this.linkTo("/team")}}>team</Button>
                 <img src={logo} alt="logo" height="80px" style={{marginLeft:'30px',marginRight:'20px', marginTop:'-5px'}} onClick={()=>{this.linkTo("/")}}></img>
                 <Button className='nav-bar-button' onClick={()=>{this.linkTo("/events")}}>events</Button>
-                <Button className='nav-bar-button' onClick={()=>{this.linkTo("/business")}}>business</Button>
+                <Button className='nav-bar-button' onClick={()=>{this.linkTo("/value-prop")}}>business</Button>
                 <Button className='nav-bar-button' onClick={()=>{this.linkTo("/contact")}}>contact</Button>
             </div>
         </div>

@@ -4,6 +4,8 @@ import Nav from './Nav';
 import Footer from './Footer';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import history from '../history';
+import ValueProp from './ValueProp';
+import ProblemStatement from './problemStatement';
 
 class App extends React.Component {
 
@@ -24,8 +26,9 @@ class App extends React.Component {
               <Route path="/team" exact component={Nav} />
               <Route path="/" exact component={Nav} />
               <Route path="/events" exact component={Nav} />
-              <Route path="/business" exact component={Nav} />
+              <Route path="/value-prop" exact component={ValueProp} />
               <Route path="/contact" exact component={Nav} />
+              <Route path="/problem-statement" exact component={ProblemStatement} />
             </Switch>
           </BrowserRouter>
         </div>
