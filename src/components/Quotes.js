@@ -108,7 +108,7 @@ class Quotes extends React.Component {
                 </div >
 
                 <div className="add-quote">
-                    <h3><i className="ui plus square icon outline" /> Add a Quote!</h3>
+                    <h3>+ Add a Quote!</h3>
                     <TextField
                         id="standard-flexible"
                         label={nameErr ? (<div>Name   <span className="name warn">
