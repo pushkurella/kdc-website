@@ -6,9 +6,11 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import history from '../history';
 import ValueProp from './ValueProp';
 import ProblemStatement from './problemStatement';
+import Contact from './Contact';
 
 class App extends React.Component {
 
+  // eslint-disable-next-line no-useless-constructor
   constructor(props) {
     super(props);
   }
@@ -29,6 +31,8 @@ class App extends React.Component {
               <Route path="/value-prop" exact component={ValueProp} />
               <Route path="/contact" exact component={Nav} />
               <Route path="/problem-statement" exact component={ProblemStatement} />
+              <Route path="/contact" exact component={Contact }/>
+
             </Switch>
           </BrowserRouter>
         </div>
