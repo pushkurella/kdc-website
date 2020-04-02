@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/App.css';
+<<<<<<< HEAD
 import Nav from './Nav';
 import Alumni from './Alumni';
 import Footer from './Footer';
@@ -44,6 +45,14 @@ class App extends React.Component {
 			</div>
 		);
 	}
+=======
+import Projects from './Projects';
+
+function App() {
+  return (
+      <Projects></Projects>
+  );
+>>>>>>> initial commit
 }
 
 export default App;
