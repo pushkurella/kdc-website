@@ -1,0 +1,90 @@
+
+.Project {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  background-color: White;
+}
+.Title {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(40px + 2vmin);
+  color: #428bca;
+}
+
+:root {
+  --gutter: 20px;
+}
+
+.Menu {
+  width: 100%;
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.Menu > * {
+  grid-column: 2 / -2;
+}
+
+.Menu > .full {
+  grid-column: 1 / -1;
+}
+
+.hs {
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 0px;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(30% - var(--gutter) * 2);
+  grid-template-rows: minmax(150px, 1fr);
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+}
+
+.hs:before,
+.hs:after {
+  content: '';
+  width: 10px;
+}
+
+.item {
+  color: #929292;
+  font-family: Lato;
+  font-size: 20px;
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f7f6f6;
+  border-radius: 8px;
+}
+
+.Detail {
+  border: 1px solid #428bca;
+  font-family: Lato;
+}
+
+.ProjectName {
+  margin-left: 15px;
+  margin-top: 5px;
+  color: #428bca;
+}
+
+.Details {
+  margin-left: 24px;
+  color: #929292;
+  font-size: large;
+}
