@@ -65,7 +65,6 @@ const Info = () => {
             scrollButtons="auto"
             aria-label="scrollable auto tabs example"
             className="tabBar"
-            centered
           >
             {TabTitleArray.map((tabTitle, index) => (
               <Tab label={tabTitle} {...a11yProps(index)}/>

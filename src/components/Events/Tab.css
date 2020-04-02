@@ -19,6 +19,11 @@
     color: blue !important;
 }
 
+.MuiTabs-flexContainer {
+    justify-content: center;
+    display: block !important;
+}
+
 .Mui-selected {
     font-weight: bolder !important;
     background-color: white !important;
