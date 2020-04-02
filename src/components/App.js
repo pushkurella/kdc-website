@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/App.css';
 import Nav from './Nav';
 import Footer from './Footer';
+import Quotes from './Quotes';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import history from '../history';
 import Contact from './Contact';
