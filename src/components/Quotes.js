@@ -9,13 +9,15 @@ import testquotes from './../assets/testdata/sample-quotes';
 
 class Quotes extends React.Component {
 
+
+
     constructor(props) {
         super(props);
         this.state = {
-            quotes: [],
-            colors: [],
-            angles: [],
-            loaded: false,
+            quotes: [],  //The array of quote objects 
+            colors: [],  //The array of randomized colors 
+            angles: [],  //the array of randomized angles
+            loaded: false,  //whether or not the page has loaded
             newName: '',
             newQuote: '',
             newTerm: '',
@@ -23,17 +25,17 @@ class Quotes extends React.Component {
             quoteErr: false,
             termErr: false
         };
+
+
     }
 
     async componentDidMount() {
         //axios call to CMS
-
-
         await this.setState({ quotes: testquotes, loaded: true });
         const { quotes } = this.state;
         var angles = [];
         var colors = [];
-        for (let i in quotes) {
+        for (let i in quotes) {  //initialize array of colors and angles for the quotes
             angles.push({
                 transform: `rotate(${Math.ceil((Math.random() * 40) - 20)}deg)`,
                 marginTop: `${Math.ceil((Math.random() * 13) + 17)}%`,
@@ -45,10 +47,6 @@ class Quotes extends React.Component {
         this.setState({ colors, angles })
     }
 
-    toggleExpanded = () => {
-        this.setState({ addExpanded: !this.state.addExpanded });
-    };
-
     handleName = (e) => {
         this.setState({ newName: e.target.value });
     }
@@ -59,7 +57,7 @@ class Quotes extends React.Component {
         this.setState({ newTerm: e.target.value });
     }
 
-    addQuote = () => {
+    addQuote = () => {  //Check whether the fields are filled in, and then push onto quote array, and add a color and angle for it 
         this.setState({ nameErr: false, termErr: false, quoteErr: false });
         const { newName, newQuote, newTerm } = this.state;
         if (newName === '') { this.setState({ nameErr: true }); }
@@ -68,6 +66,18 @@ class Quotes extends React.Component {
         const { nameErr, quoteErr, termErr } = this.state;
         if (!nameErr && !quoteErr && !termErr) {
             //some sort of submit logic to CMS
+
+            this.setState({
+                quotes: [...this.state.quotes, { name: newName, quote: newQuote, term: newTerm }],
+                angles: [...this.state.angles, {
+                    transform: `rotate(${Math.ceil((Math.random() * 40) - 20)}deg)`,
+                    marginTop: `${Math.ceil((Math.random() * 13) + 17)}%`,
+                    marginLeft: `${Math.ceil((Math.random() * 12))}%`
+                }]
+                ,
+                colors: [...this.state.colors, `sticky note icon post col${Math.ceil(Math.random() * 4)}`]
+            })
+            this.setState({ newName: '', newQuote: '', newTerm: '' })
         }
 
     }
@@ -75,11 +85,12 @@ class Quotes extends React.Component {
     render() {
         var { quotes, colors, angles, newQuote, newName, newTerm, termErr, nameErr, quoteErr } = this.state;
         var CHARACTER_LIMIT = 100;
+
         return (
             <div className='leave-your-mark'>
                 <h2 className="wall-header">Leave Your Mark</h2>
                 <div className="ui divider" />
-                <div className="quote-wall" style={{ height: `${35 * (quotes.length / 4 + 1)}vh` }}>
+                <div className="quote-wall" style={{ height: `${37 * (quotes.length / 4 + 1)}vh` }}>
 
 
                     {quotes.map((quote, index) =>
@@ -112,9 +123,16 @@ class Quotes extends React.Component {
                         value={newName}
 
                     />
+                    <div className='post-div before' >
+                        <i className="sticky note icon post col4">
+                            <p className="quote text" >"{newQuote}"</p>
+                            <p className="quote user">-{newName}</p>
+                            <p className="quote term">{newTerm} </p>
+                        </i>
+                    </div>
                     <TextField
                         id="standard-multiline-static"
-                        label={nameErr ? (<div>Quote   <span className="name warn">
+                        label={quoteErr ? (<div>Quote   <span className="quote warn">
                             &emsp; <i className="exclamation circle icon" /> Enter your quote!
                     </span></div>) : 'Quote'}
                         multiline
@@ -136,18 +154,17 @@ class Quotes extends React.Component {
                     </InputLabel>
                     <Select defaultValue="" className="quote-input" value={newTerm} input={<Input id="grouped-select" onChange={this.handleTerm} />}>
                         <MenuItem value="Spring 2020">Spring 2020</MenuItem>
-                        <MenuItem value="Spring 2020">Winter 2020</MenuItem>
-                        <MenuItem value="Spring 2020">Fall 2019</MenuItem>
-                        <MenuItem value="Spring 2020">Spring 2019</MenuItem>
-                        <MenuItem value="Spring 2020">Winter 2019</MenuItem>
-                        <MenuItem value="Spring 2020">Fall 2018</MenuItem>
+                        <MenuItem value="Winter 2020">Winter 2020</MenuItem>
+                        <MenuItem value="Fall 2019">Fall 2019</MenuItem>
+                        <MenuItem value="Spring 2019">Spring 2019</MenuItem>
+                        <MenuItem value="Winter 2019">Winter 2019</MenuItem>
+                        <MenuItem value="Fall 2018">Fall 2018</MenuItem>
                         <MenuItem value="Spring 2020"> Spring 2018</MenuItem>
                     </Select>
-
                     <Button onClick={this.addQuote} className='add-quote-btn'>Add</Button>
 
-
                 </div>
+
             </div >
 
 

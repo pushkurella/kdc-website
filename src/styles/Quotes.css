@@ -7,6 +7,7 @@ h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #428bca;
     font-size: 50px;
+    text-align: center !important;
 }
 
 h3{ 
@@ -20,6 +21,7 @@ h3{
     width: 85vw; 
     margin: 5vh auto 0 auto;
     padding: 5vh 1vw 5vh 0;
+    min-height: 60vh; 
 }
 
 .post-div{ 
@@ -27,6 +29,9 @@ h3{
     height: 37vh;
     float: left;
     padding-top: 2.5%;
+    transition: left 5s;
+    transition: top 5s;
+
 
 }
 
@@ -93,7 +98,7 @@ h3{
 
 .add-quote{ 
 float: bottom !important; 
-width: 60% ;
+width: 70% ;
 margin: auto; 
     border-radius: 14px; 
     padding: 10px ;
@@ -105,8 +110,8 @@ margin: auto;
 }
 
 .quote-input{ 
-    width: 80% !important;
-    margin: 5px 200px 20px 0 !important;
+    width: 60% !important;
+    margin: 5px 5% 20px 0 !important;
     float: left !important;
     overflow: hidden !important
 }
@@ -128,4 +133,11 @@ margin-top: 150px !important;
     color: red;
     opacity: 70%;
     font-weight: 100;
+}
+
+.before{
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+       margin-bottom: 10%;
 }
