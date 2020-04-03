@@ -3,6 +3,7 @@ import '../styles/App.css';
 import Nav from './Nav';
 import Alumni from './Alumni';
 import Footer from './Footer';
+import Quotes from './Quotes';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import history from '../history';
 import ValueProp from './ValueProp';
@@ -34,7 +35,8 @@ class App extends React.Component {
               <Route path="/contact" exact component={Nav} />
               <Route path="/problem-statement" exact component={ProblemStatement} />
               <Route path="/events" exact component={EventsPage} />
-              <Route path="/contact" exact component={Contact }/>
+              <Route path="/contact" exact component={Contact} />
+              <Route path="/leaveyourmark" exact component={Quotes} />
 
             </Switch>
           </BrowserRouter>
