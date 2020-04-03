@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/App.css';
 import Nav from './Nav';
+import Alumni from './Alumni';
 import Footer from './Footer';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import history from '../history';
@@ -27,8 +28,8 @@ class App extends React.Component {
               <Route path="/about" exact component={Nav} />
               <Route path="/projects" exact component={Nav} />
               <Route path="/team" exact component={Nav} />
+              <Route path="/alumni" exact component={Alumni} />
               <Route path="/" exact component={Nav} />
-              <Route path="/events" exact component={Nav} />
               <Route path="/value-prop" exact component={ValueProp} />
               <Route path="/contact" exact component={Nav} />
               <Route path="/problem-statement" exact component={ProblemStatement} />
