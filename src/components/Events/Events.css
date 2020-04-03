@@ -1,0 +1,19 @@
+.Title {
+    font-family: Arial;
+    font-weight: 500;
+    color: #428bca;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.Events {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+/* .Page {
+    border: 5px solid blue;
+    margin: 20px
+} */
