@@ -30,7 +30,6 @@ class App extends React.Component {
               <Route path="/team" exact component={Nav} />
               <Route path="/alumni" exact component={Alumni} />
               <Route path="/" exact component={Nav} />
-              <Route path="/events" exact component={Nav} />
               <Route path="/value-prop" exact component={ValueProp} />
               <Route path="/contact" exact component={Nav} />
               <Route path="/problem-statement" exact component={ProblemStatement} />
