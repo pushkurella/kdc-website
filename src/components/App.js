@@ -5,7 +5,10 @@ import Alumni from './Alumni';
 import Footer from './Footer';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import history from '../history';
+
+import EventsPage from './Events/Events';
 import Contact from './Contact';
+
 class App extends React.Component {
 
   // eslint-disable-next-line no-useless-constructor
@@ -26,7 +29,7 @@ class App extends React.Component {
               <Route path="/team" exact component={Nav} />
               <Route path="/alumni" exact component={Alumni} />
               <Route path="/" exact component={Nav} />
-              <Route path="/events" exact component={Nav} />
+              <Route path="/events" exact component={EventsPage} />
               <Route path="/business" exact component={Nav} />
               <Route path="/contact" exact component={Contact }/>
             </Switch>
