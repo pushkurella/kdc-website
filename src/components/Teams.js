@@ -66,23 +66,23 @@ class Teams extends React.Component {
       <div>
         <div className="center">
           <h1 className="title">Our Teams</h1>
-          <p aligntext="center">The Kitchener Development Centre has a variety
+          <p className="team-description">The Kitchener Development Centre has a variety
           of team members who all work toward one central
           goal of providing the company with the highest
           quality products and providing each other with
              the greatest work experience possible.</p>
-          <button className="button" onClick={()=>{this._linkTo("/leaveyourmark")}}>Meet our Alumni</button>
+          <button className="go-to-alumni-btn" onClick={()=>{this._linkTo("/alumni")}}>Meet our Alumni</button>
         </div>
 
         <h1 className="headers">Senior Members</h1>
-        <Grid columns={2} centered className="managers">
+        <Grid columns={2} className="managers">
             {this.state.managers.map((value, index) => {
               return (<Grid.Column key={index} className="Columns">
                 <div className='center-image'>
                   <Image ui centered image src={value.img} alt="Not displayed" />
                 </div>
-                <div className="center employee-name">{value.name}</div>
-                <div className="center employee-role">{value.role}</div>
+                <div className="employee-name">{value.name}</div>
+                <div className="employee-role">{value.role}</div>
               </Grid.Column>);
             })}
         </Grid>
@@ -92,7 +92,7 @@ class Teams extends React.Component {
           {this.state.leads.map((value, index) => {
             return (<Grid.Column key={index} className="Columns">
               <div className='center-image'>
-                <Image ui centered image src={value.img} />
+                <Image ui centered image src={value.img} alt="Not displayed"/>
                 </div>
               <div className="employee-name">{value.name}</div>
               <div className="employee-role">{value.role}</div>
