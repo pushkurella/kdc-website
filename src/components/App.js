@@ -36,7 +36,7 @@ class App extends React.Component {
 							<Route path="/problem-statement" exact component={ProblemStatement}/>
 							<Route path="/events" exact component={EventsPage} />
 							<Route path="/contact" exact component={Contact} />
-							<Route path="/leaveyourmark" exact component={Quotes} />
+							<Route path="/leave-your-mark" exact component={Quotes} />
 						</Switch>
 					</BrowserRouter>
 				</div>
