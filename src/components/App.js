@@ -3,14 +3,20 @@ import '../styles/App.css';
 import Nav from './Nav';
 import Alumni from './Alumni';
 import Footer from './Footer';
+import Quotes from './Quotes';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import history from '../history';
 import ValueProp from './ValueProp';
 import ProblemStatement from './problemStatement';
 import EventsPage from './Events/Events';
 import Contact from './Contact';
+import Home from './Home';
 
 class App extends React.Component {
+	// eslint-disable-next-line no-useless-constructor
+	constructor(props) {
+		super(props);
+	}
 
   // eslint-disable-next-line no-useless-constructor
   constructor(props) {
@@ -34,6 +40,7 @@ class App extends React.Component {
               <Route path="/problem-statement" exact component={ProblemStatement} />
               <Route path="/events" exact component={EventsPage} />
               <Route path="/contact" exact component={Contact}/>
+              <Route path="/leave-your-mark" exact component={Quotes} />
             </Switch>
           </BrowserRouter>
         </div>
