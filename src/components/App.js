@@ -29,13 +29,11 @@ class App extends React.Component {
               <Route path="/projects" exact component={Nav} />
               <Route path="/team" exact component={Nav} />
               <Route path="/alumni" exact component={Alumni} />
-              <Route path="/" exact component={Nav} />
-              <Route path="/value-prop" exact component={ValueProp} />
-              <Route path="/contact" exact component={Nav} />
+              <Route path="/" exact component={EventsPage} />
+              <Route path="/value-prop" exact component={ValueProp}/>
               <Route path="/problem-statement" exact component={ProblemStatement} />
               <Route path="/events" exact component={EventsPage} />
-              <Route path="/contact" exact component={Contact }/>
-
+              <Route path="/contact" exact component={Contact}/>
             </Switch>
           </BrowserRouter>
         </div>
