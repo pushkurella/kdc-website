@@ -1,0 +1,38 @@
+.tabComponent {
+    padding-top: 50px;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tabBar {
+    background-color: whitesmoke;
+    text-align: center;
+    scroll-behavior: auto;
+}
+
+.MuiButtonBase-root {
+    color: black !important;
+}
+
+.MuiTab-textColorPrimary {
+    color: blue !important;
+}
+
+.MuiTabs-flexContainer {
+    justify-content: center;
+    display: block !important;
+}
+
+.Mui-selected {
+    font-weight: bolder !important;
+    background-color: white !important;
+}
+
+.MuiAppBar-positionStatic {
+    background-color: whitesmoke !important;
+}
+
+.MuiTypography-body1 {
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+.valueProp-card{
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.valueProp-card-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #428bca;
+}
+
+.valueProp-card-cards{
+    width: 80%;
+    margin: auto;
+    height: 60px;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.valueProp-card-cards-text{
+    margin-top: 15px;
+    margin-left: 100px;
+    color: #428bca;
+}
+
+.valueProp-card-btn{
+    margin: auto !important;
+}
+
+.valueProp-card-cards-icon{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -5px;
+    font-size: xx-large !important;
+}
+
+.valueProp-card-btn{
+    text-align: center !important;
+}

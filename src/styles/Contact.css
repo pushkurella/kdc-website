@@ -1,0 +1,48 @@
+.ui.form input[type=text] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px solid #dddddd;
+  }
+
+  .ui.form textarea {
+    margin: 10px;
+  }
+
+  .ui.primary.button {
+      margin-right: auto;
+      align-content: center;
+  }
+
+  .ui.card {
+    width: max-content;
+    margin-left: 10px;
+    box-shadow: none;
+    
+  }
+
+  .ui.primary.button {
+      float: right;
+  }
+  .ui.card>.content, .ui.cards>.card>.content {
+      margin: 20px;
+      padding: 10px;
+
+  }
+  h1, h3{
+      align-content: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin: 10px;
+      color: #3b92dd;
+  }
+  h1{
+      font-size: 50px;
+  }
+  .ui.two.cards>.card {
+      box-shadow: none;
+  }
+
+   .spans{display:inline-block;margin-right:10px;} 

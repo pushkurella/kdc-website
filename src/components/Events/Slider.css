@@ -1,0 +1,30 @@
+button.slick-arrow {
+    color: black !important;
+    background-color: gray !important;
+}
+
+button.slick-prev {
+    z-index: 2;
+    margin-left: 10% !important;
+}
+
+button.slick-next {
+    z-index: 2;
+    margin-right: 10% !important;
+}
+
+img {
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: center;
+}
+
+.slick-list {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 500px;
+}
+

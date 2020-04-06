@@ -1,0 +1,25 @@
+.outsideBox {
+    margin: auto;
+    text-align: center;
+    height: 13vw;
+    width: 13vw;
+}
+
+.portrait {
+    width: 60% !important;
+    border: 3px #428bca solid;
+    margin: auto;
+}
+
+.personName {
+    font-size: min(1.8vw, 2em);
+    margin: 0px;
+    color: #428bca;
+}
+
+.personDescription {
+    font-size: min(1.5vw, 1.28571428em);
+    margin: 0px !important;
+    color: #428bca;
+    opacity: 60%;
+}
