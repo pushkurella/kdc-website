@@ -4,16 +4,26 @@
     border-style: solid;
     border-width: 3px;
     border-color: #3f84c0;
-    text-align: center;
+    text-align: center !important;
     margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 13% 13% 13% 22% 13% 13% 13%;
 }
 
 .nav-bar-button{
-    margin-top: -70px !important;
     color:#428bca !important;
     font-size: large !important;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
-    width: 200px;
-    height: 70px;
+    margin: auto !important;
+    margin-top: 0px !important;
+    width: 150px;
+    height: 60px; 
+}
+
+.nav-bar-logo{
+    height: 80px;
+    margin-top: -5px;
+}
+
+.nav-bar-team-DD{
+    padding-top: 200px !important;
 }
