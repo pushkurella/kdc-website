@@ -1,9 +1,16 @@
 
-h1{
+.title{
     color: #3b92dd;
     margin: auto;
     text-align: center;
     font-size: 60px;
+}
+.headers{
+    color: #3b92dd;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+
 }
 
 p {
