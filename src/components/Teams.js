@@ -57,7 +57,7 @@ const info = [{
       return (
         <div>
           <div className="center">
-          <h1 >Teams</h1>
+          <h1 >Our Teams</h1>
           <p aligntext="center">The Kitchener Development Centre has a variety 
             of team members who all work toward one central
              goal of providing the company with the highest 

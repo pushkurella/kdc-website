@@ -11,20 +11,8 @@ import ProblemStatement from './problemStatement';
 import EventsPage from './Events/Events';
 import Contact from './Contact';
 import Home from './Home';
-
-import ReactDOM from 'react-dom';
-import '../styles/App.css';
 import Teams from './Teams';
 
-// function App() {
-//   return (
-//     <div>
-//       <Teams/>
-//     </div>
-//    );
-// };
-
-// ReactDOM.render(<App/>, document.querySelector('#root'));
 
 class App extends React.Component {
 	// eslint-disable-next-line no-useless-constructor
