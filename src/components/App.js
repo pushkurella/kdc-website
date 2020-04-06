@@ -12,6 +12,20 @@ import EventsPage from './Events/Events';
 import Contact from './Contact';
 import Home from './Home';
 
+import ReactDOM from 'react-dom';
+import '../styles/App.css';
+import Teams from './Teams';
+
+// function App() {
+//   return (
+//     <div>
+//       <Teams/>
+//     </div>
+//    );
+// };
+
+// ReactDOM.render(<App/>, document.querySelector('#root'));
+
 class App extends React.Component {
 	// eslint-disable-next-line no-useless-constructor
 	constructor(props) {
@@ -27,7 +41,7 @@ class App extends React.Component {
 						<Switch>
 							<Route path="/about" exact component={Nav} />
 							<Route path="/projects" exact component={Nav} />
-							<Route path="/team" exact component={Nav} />
+							<Route path="/teams" exact component={Teams} />
 							<Route path="/alumni" exact component={Alumni} />
 							<Route path="/" exact component={Home} />
 							<Route path="/value-prop" exact component={ValueProp} />

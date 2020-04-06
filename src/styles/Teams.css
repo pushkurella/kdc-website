@@ -1,0 +1,51 @@
+
+h1{
+    color: #3b92dd;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+}
+
+p {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.managers{
+    margin: auto auto 10% auto!important;
+    color: #3b92dd;
+    width: 50%;
+    
+    /* justify-content: center; */
+    /* padding-left: 100px;
+    border-left: 100px; */
+    /* text-align: right; */
+}
+.leads{
+    margin: auto !important;
+    color: #3b92dd;
+    width: 70%;
+}
+
+.Columns{
+    margin:auto;
+    text-align: center;
+    align-items: center;
+}
+
+button{
+    color: #3b92dd;
+    margin: auto auto 5% auto;
+    border-radius: 10px;
+    background-color: rgba(59,146,221,0.2);
+    
+}
+.center{
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
