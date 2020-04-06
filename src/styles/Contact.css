@@ -36,6 +36,10 @@
       justify-content: center;
       text-align: center;
       margin: 10px;
+      color: #3b92dd;
+  }
+  h1{
+      font-size: 50px;
   }
   .ui.two.cards>.card {
       box-shadow: none;

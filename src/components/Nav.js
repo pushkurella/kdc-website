@@ -34,8 +34,8 @@ class Nav extends React.Component {
         this.setState(obj);
     }
 
-    handleClick = (event) =>{
-        this.setState({element: event.currentTarget});
+    handleClick = (event) => {
+        this.setState({ element: event.currentTarget });
     }
 
 
@@ -46,6 +46,7 @@ class Nav extends React.Component {
                 <Button className='nav-bar-button' onClick={() => { this.linkTo("/projects") }}>projects</Button>
                 <Button className='nav-bar-button' onClick={(e) => { this.open("teamDD"); this.handleClick(e); }}>team</Button>
                 <Menu className='nav-bar-team-DD' anchorEl={this.state.element} keepMounted open={this.state.teamDD} onClose={() => { this.handleClose("teamDD") }}>
+                    <MenuItem onClick={() => { this.handleClose("teamDD"); this.linkTo("/teams"); }}>Our Team</MenuItem>
                     <MenuItem onClick={() => { this.handleClose("teamDD"); this.linkTo("/alumni"); }}>Alumni Home</MenuItem>
                     <MenuItem onClick={() => { this.handleClose("teamDD"); this.linkTo("/leave-your-mark"); }}>Leave Your Mark</MenuItem>
                 </Menu>
