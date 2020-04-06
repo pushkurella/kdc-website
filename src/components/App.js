@@ -18,13 +18,7 @@ class App extends React.Component {
 		super(props);
 	}
 
-  // eslint-disable-next-line no-useless-constructor
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-
     return (
       <div className="app">
         <Nav />
