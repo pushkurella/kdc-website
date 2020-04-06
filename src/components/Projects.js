@@ -58,6 +58,17 @@ class Projects extends React.Component {
           slidesToShow: 1,
           variableWidth: true,
           infinite: false,
+          responsive: [
+            {
+              breakpoint: 450,
+              settings: {
+                slidesToShow: 0,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true
+              }
+            }
+        ],
         };
         return (
         <div className="Project">
