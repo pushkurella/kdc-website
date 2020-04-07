@@ -126,26 +126,6 @@ class Projects extends React.Component {
         );
       }
     }
-    
 
-    // render () {
-    //     return (
-    //         <div className="Project">
-    //             <h1 className="Title"> Projects & Partners</h1>
-    //             <div className="Menu">
-    //                 <ul className="hs">
-    //                     {this.state.projects.map((value, index) => {
-    //                         return <button className="item" key={index} onClick={() => this.setState({currentProject: index})}>{value.name}</button>
-    //                     })}
-    //                 </ul>
-    //             </div>
-    //             <div></div>
-    //             <div className="Detail">
-    //                 <h1 className="ProjectName"> {this.state.projects[this.state.currentProject].name} </h1>
-    //                 <p className="Details"> {this.state.projects[this.state.currentProject].Desc}</p>
-    //             </div>    
-    //         </div>
-    //     );
-    // }
 
 export default Projects;
