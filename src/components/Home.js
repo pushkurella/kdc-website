@@ -29,6 +29,8 @@ import logo from '../assets/Cooperators-logo.png';
 /** Import withRouter from React Router DOM */
 import { withRouter } from 'react-router-dom';
 
+import AnimatedLogo from './Logo.js';
+
 /** Create Home Component */
 class Home extends React.Component {
 	navigate = (path) => {
