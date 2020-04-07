@@ -12,6 +12,7 @@ import EventsPage from './Events/Events';
 import Contact from './Contact';
 import Home from './Home';
 import Teams from './Teams';
+import Projects from './Projects';
 
 
 class App extends React.Component {
@@ -28,7 +29,7 @@ class App extends React.Component {
 					<BrowserRouter history={history}>
 						<Switch>
 							<Route path="/about" exact component={Nav} />
-							<Route path="/projects" exact component={Nav} />
+							<Route path="/projects" exact component={Projects} />
 							<Route path="/teams" exact component={Teams} />
 							<Route path="/alumni" exact component={Alumni} />
 							<Route path="/" exact component={Home} />

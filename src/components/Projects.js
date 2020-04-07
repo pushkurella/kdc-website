@@ -48,14 +48,27 @@ let data = [
 class Projects extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {projects: data, currentProject: 0};
+        this.state = {projects: data, currentProject: 0, width: 500};
     }
     componentDidMount() {
+        console.log(Math.floor(this.state.width/ 400) );
+        this.updateWindowDimensions();
+         window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions = () => {
+        this.setState({ width: window.innerWidth});
+        console.log(Math.floor(this.state.width/ 400) );
     }
     render() {
         var settings = {
-          dots: true,
-          slidesToShow: 1,
+          dots: false,
+          slidesToShow: Math.floor(this.state.width / 400),
+          slidesToScroll: Math.floor(this.state.width / 400),
           variableWidth: true,
           infinite: false,
           responsive: [
@@ -65,10 +78,10 @@ class Projects extends React.Component {
                 slidesToShow: 0,
                 slidesToScroll: 1,
                 infinite: false,
-                dots: true
+                dots: false,
               }
             }
-        ],
+          ],
         };
         return (
         <div className="Project">
@@ -81,7 +94,6 @@ class Projects extends React.Component {
                         <div className="text">
                             {value.name}
                         </div>
-                        <MicIcon className="icon" fontSize="large" />
                     </button>
                     );
                 })}
