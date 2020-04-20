@@ -1,0 +1,143 @@
+.leave-your-mark{ 
+    border: 2px solid lightskyblue;
+    margin: 5px;
+}
+
+h2{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #428bca;
+    font-size: 50px;
+    text-align: center !important;
+}
+
+h3{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #555555;
+    font-weight: 100; 
+    font-size: 32px;
+}
+
+.quote-wall{ 
+    width: 85vw; 
+    margin: 5vh auto 0 auto;
+    padding: 5vh 1vw 5vh 0;
+    min-height: 60vh; 
+}
+
+.post-div{ 
+    width: 25%; 
+    height: 37vh;
+    float: left;
+    padding-top: 2.5%;
+    transition: left 5s;
+    transition: top 5s;
+
+
+}
+
+.post{ 
+    font-size: 19vw  !important;
+    font-stretch: ultra-expanded !important;
+    float: left !important;
+    /* margin-top:13% !important; */
+    opacity: 0.8 !important;
+}
+
+.divider{ 
+    margin-bottom: 10px !important;
+}
+
+.col1{ 
+   color: lightblue !important;
+}
+
+.col2{ 
+    color: pink !important;
+}
+
+.col3{ 
+    color:rgb(255,255,191) !important;
+}
+
+.col4{ 
+    color: rgb(191,255,191) !important;
+}
+
+.quote{ 
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(15,15,15) ;
+    font-size: 1.3vw;
+    padding: 0 !important;
+    width: 75% !important;
+    text-align: center !important;
+}
+
+.text{
+    margin: -35% auto !important;
+}
+
+.user{ 
+    margin: 35% 0 0 20%  !important;
+    text-align: left !important;
+    width: 70% !important;
+    font-weight: 800 !important;
+}
+.term { 
+     margin:0 10% 0 0  !important; 
+    text-align: right !important;
+    width: 70% !important;
+    font-weight: 100 !important;
+    font-size: 14px !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important}
+
+.plus , .minus{ 
+    margin: 0 0 10px 1px !important;
+
+}
+
+
+.add-quote{ 
+float: bottom !important; 
+width: 70% ;
+margin: auto; 
+    border-radius: 14px; 
+    padding: 10px ;
+    height: 400px ;
+    margin-bottom: 100px; 
+    margin-top: 20px;
+    border: 1px solid #DDDDDD;
+    box-shadow: 6px 6px 4px lightslategray;
+}
+
+.quote-input{ 
+    width: 60% !important;
+    margin: 5px 5% 20px 0 !important;
+    float: left !important;
+    overflow: hidden !important
+}
+
+.input-label{ 
+text-align: left !important;
+margin-top: 150px !important;
+}
+
+
+.add-quote-btn{ 
+    float: left !important;
+    width: 20% !important;
+    margin: 10px 0 0 10px !important; 
+    border: 1px solid #DDDDDD !important;
+}
+
+.warn { 
+    color: red;
+    opacity: 70%;
+    font-weight: 100;
+}
+
+.before{
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+       margin-bottom: 10%;
+}

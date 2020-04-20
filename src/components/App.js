@@ -1,26 +1,50 @@
 import React from 'react';
-import logo from '..//logo.svg';
 import '../styles/App.css';
+import Nav from './Nav';
+import Alumni from './Alumni';
+import Footer from './Footer';
+import Quotes from './Quotes';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import history from '../history';
+import ValueProp from './ValueProp';
+import ProblemStatement from './problemStatement';
+import EventsPage from './Events/Events';
+import Contact from './Contact';
+import Home from './Home';
+import Teams from './Teams';
+import Projects from './Projects';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+	// eslint-disable-next-line no-useless-constructor
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		return (
+			<div className="app">
+				<Nav />
+				<div className="app-body">
+					<BrowserRouter history={history}>
+						<Switch>
+							<Route path="/about" exact component={Nav} />
+							<Route path="/projects" exact component={Projects} />
+							<Route path="/teams" exact component={Teams} />
+							<Route path="/alumni" exact component={Alumni} />
+							<Route path="/" exact component={Home} />
+							<Route path="/value-prop" exact component={ValueProp} />
+							<Route path="/problem-statement" exact component={ProblemStatement}/>
+							<Route path="/events" exact component={EventsPage} />
+							<Route path="/contact" exact component={Contact} />
+							<Route path="/leave-your-mark" exact component={Quotes} />
+						</Switch>
+					</BrowserRouter>
+				</div>
+				<Footer />
+			</div>
+		);
+	}
 }
 
 export default App;

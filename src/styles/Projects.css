@@ -1,0 +1,149 @@
+.container {
+  margin: auto;
+  position: relative;
+  width: 80vmin;
+  height: auto;
+  padding: 3%;
+}
+button.slick-arrow {
+  color: #929292!important;
+  background-color: white!important;
+}
+
+button.slick-prev {
+  margin-left: 0%!important;
+  color: #929292!important;
+  background-color: white!important;
+}
+
+button.slick-next {
+  color: #929292!important;
+  background-color: white!important;
+  margin-right: 0% !important;
+}
+
+.slick-slide {
+  margin-left:5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color:#929292!important;
+}
+
+.Project {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  background-color: White;
+}
+.Title {
+  margin: 0px;
+  font-family: lato;
+  height: 2vmin;
+  background-color: white;
+  text-align: center;
+  font-size: 5vmin;
+  color: #428bca;
+}
+ß
+.icon {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3vmin;
+}
+.item {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin: 1vmin 1vmin 1vmin 1vmin;
+  height: 16vh;
+  width: 16vh!important;
+  color: #929292;
+  font-family: Lato;
+  font-size: 3vmin;
+  scroll-snap-align: center;
+  background: #f7f6f6;
+  box-shadow: 0px 5px 5px grey;
+}
+
+.Detail {
+  margin-bottom: 6vmin;
+  margin-top: 2vmin;
+  height: auto;
+  border: 1px solid #428bca;
+  font-family: Lato;
+}
+
+.ProjectName {
+  align-content: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  margin: 0px;
+
+  height: 4vmin;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-top: 5px;
+  color: #428bca;
+  font-size: 4vmin;
+}
+
+.Contributors {
+  width: 80%;
+  margin-bottom: 1%;
+  height: auto;
+  white-space:nowrap;
+}
+
+.Child {
+  vertical-align: middle;
+  font-family: Lato;
+  color: #428bca;
+  display: inline-block;
+  margin-right: 2vmin;
+  margin-top: 1vmin;
+  margin-left: 2vmin;
+}
+
+.icon2 {
+  vertical-align: middle;
+  font-size: 6vmin;
+  display: inline-block;
+}
+.Contributor {
+  vertical-align: middle;
+  font-size: 3vmin;
+  display: inline-block;
+}
+
+.Details {
+  margin-bottom: 6vh;
+  overflow: auto;
+  margin-left: 24px;
+  color: #929292;
+  font-size: large;
+}
+
+.Wrapper {
+  width: 100%;
+  height: 3vh;
+  bottom: 2vh;
+  position: relative;
+}
+
+.Technologies {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.Technology {
+  margin-right: 5%;
+  font-size: 3vmin;
+  color: #929292;
+  display: inline-block;
+}

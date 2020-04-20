@@ -1,0 +1,55 @@
+
+.title{
+    color: #3b92dd;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+}
+.headers{
+    color: #3b92dd;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 3%;
+
+}
+
+.team-description {
+    margin: auto;
+    text-align: center;
+    color: #3b92dd;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.managers{
+    margin: auto auto 10% auto!important;
+    color: #3b92dd;
+    width: 50%;
+}
+.leads{
+    margin: auto !important;
+    color: #3b92dd;
+    width: 70%;
+}
+
+.Columns{
+    margin:auto;
+    text-align: center;
+    align-items: center;
+}
+
+.go-to-alumni-btn{
+    color: #3b92dd;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(59,146,221,0.2);
+    
+}
+.center{
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
